@@ -1,0 +1,92 @@
+/* CONFIGURAÇÕES GLOBAIS */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* CONF. BODY */
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+/* CONTAINER CABEÇALHO */
+header{
+  width: 100%;
+}
+
+/* NAVBAR */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c9c9c9;
+}
+nav > div#logo{
+  margin: 30px;
+}
+
+nav > div#logo > a{
+  text-decoration: none;
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+nav > ul > li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+nav > ul > li > a:hover{
+  background-color: gray;
+  border-radius: 10px;
+  transition: .5s;
+  text-decoration: underline;
+}
+
+/* NAVBAR LATERAL */
+#menu-l{
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: #c9c9c9;
+}
+
+ul#menu-l > li{
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ÍCONES ABRIR E FECHAR */
+i{
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#fechar{
+  margin: 20px;
+}

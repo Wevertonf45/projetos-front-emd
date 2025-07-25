@@ -1,0 +1,53 @@
+@media (max-width: 880px){
+  nav > ul > li{
+    margin: 10px;
+  }
+
+  #foto{
+    display: none;
+  }
+
+  #infos{
+    margin: 0;
+    text-align: center;
+    padding: 40px 50px;
+  }
+
+  #infos > h1{
+    font-size: 40px;
+  }
+
+  #infos > h2{
+    font-size: 20px;
+  }
+
+  #redes{
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+
+  section#services > ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section#services > ul > li{
+    width: 200px;
+  }
+
+  section#skills{
+    height: auto;
+  }
+  
+  #skills > ul{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
