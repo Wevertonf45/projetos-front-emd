@@ -11,6 +11,12 @@
     margin: 0;
     text-align: center;
     padding: 40px 50px;
+    height: auto;
+    width: 100%;
+  }
+
+  #infos > p#hello{
+    text-align: center;
   }
 
   #infos > h1{
@@ -19,6 +25,10 @@
 
   #infos > h2{
     font-size: 20px;
+  }
+
+  #infos > p{
+    text-align: center;
   }
 
   #redes{

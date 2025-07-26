@@ -1,5 +1,6 @@
 :root{
   --borda: 1px dashed red;
+  --azul: rgba(0, 0, 255, 0.8);
 }
 
 *{
@@ -10,6 +11,7 @@
   scroll-behavior: smooth;
 }
 
+/* CONF. BODY */
 body{
   height: 100vh;
   width: 100vw;
@@ -55,40 +57,6 @@ nav > ul > li > a:hover{
   text-decoration: underline;
 }
 
-/* NAVBAR LATERAL */
-#menu-l{
-  display: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 999;
-  background-color: black;
-}
-
-ul#menu-l > li{
-  width: 100%;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ÍCONES ABRIR E FECHAR */
-i{
-  color: white;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-#fechar{
-  margin: 20px;
-}
-
 /* SEÇAO INICIO */
 section#inicio{
   display: flex;
@@ -102,16 +70,27 @@ section#inicio{
   margin: 0 0 0 50px;
   padding: 40px 16px;
   height: 350px;
+  width: 55%;
+  line-height: 30px;
 }
+
+#infos > p#hello{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
 #infos > h1{
-  font-size: 60px;
+  font-size: 40px;
   color: white;
+  margin-bottom: 15px;
 }
 
 #infos > h2{
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 #infos > p{
@@ -125,6 +104,8 @@ section#inicio{
   align-items: center;
   height: 350px;
   margin: 0 50px 0 30px;
+  width: auto;
+  padding: 0 15px;
 }
 
 #foto > img{
@@ -137,37 +118,53 @@ section#inicio{
   display: flex;
   margin: 10px 0 0 0;
   align-items: center;
-  padding: 8px;
+  padding: 10px;
 }
 
 #redes > a{
   display: inline-block;
-  margin-left: 15px;
 }
-#redes > a > button{
-  border: 1px solid white;
+
+#redes > button{
+  border: none;
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
   transition: .2s ease-in;
-  background-color: transparent;
+  background-color: var(--azul);
   color: white;
   text-shadow: 0px 0px 10px white;
 }
 
-#redes > a > button:hover{
+#redes > button > a{
+  color: white;
+  text-decoration: none;
+}
+
+#redes > button:hover{
   scale: 110%;
-  background-color: white;
+  background-color: transparent;
   color: black;
+  border: 1px solid white;
+}
+
+#redes > a{
+  color: white;
+  margin: 0 10px 0 15px;
 }
 
 #redes > a > i{
   transition: .2s ease-in;
+  font-size: 25px;
 }
 
 #redes > a > i:hover{
-  scale: 120%;
+  scale: 150%;
+}
+
+.cor{
+  color: rgba(96, 96, 238, 0.8);
 }
 
 /* SEÇAO SERVIÇOS */
