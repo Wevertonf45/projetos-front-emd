@@ -1,0 +1,9 @@
+@media (max-width: 830px){
+  #foto-inicio{
+    display: none;
+  }
+
+  #cabeça{
+    width: 100%;
+  }
+}
