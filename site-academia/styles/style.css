@@ -101,21 +101,19 @@ header > div > h1{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#about > div{
-  width: 70%;
+  width: 100%;
+  flex-direction: column;
   padding: 30px;
 }
 
-#about > div > h1{
+#about > h1{
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
   font-family: sans-serif;
 }
 
-#about > div > p{
+#about > p{
   text-align: justify;
   font-size: 20px;
   font-weight: 600;
@@ -167,4 +165,58 @@ header > div > h1{
   align-items: center;
   margin-bottom: 15px;
   background-color: var(--corseg);
+}
+
+/* SEÇAO 4 */
+#seçao-4{
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/istockphoto-181894126-612x612.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#texto-seçao-4{
+  text-align: center;
+  color: white;
+  width: 60%;
+}
+
+#texto-seçao-4 > h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--corseg);
+}
+
+#texto-seçao-4 > p{
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#btn2 > button{
+  background-color: var(--corseg);
+  border: none;
+  padding: 8px;
+  border-radius: 20px;
+  width: 150px;
+  transition: .3s ease-in;
+}
+
+#btn2 > button:hover{
+  background-color: transparent;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+#btn2 > button > a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: monospace;
+  font-size: 15px;
 }
