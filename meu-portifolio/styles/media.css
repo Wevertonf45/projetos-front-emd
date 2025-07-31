@@ -3,8 +3,10 @@
     margin: 10px;
   }
 
-  #foto{
-    display: none;
+  section#inicio{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
   }
 
   #infos{
@@ -13,18 +15,6 @@
     padding: 40px 50px;
     height: auto;
     width: 100%;
-  }
-
-  #infos > p#hello{
-    text-align: center;
-  }
-
-  #infos > h1{
-    font-size: 40px;
-  }
-
-  #infos > h2{
-    font-size: 20px;
   }
 
   #infos > p{
@@ -37,6 +27,9 @@
     padding: 8px;
   }
 
+  section#services{
+    height: auto;
+  }
   section#services > ul{
     display: flex;
     flex-wrap: wrap;
