@@ -11,6 +11,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* CONF. BODY */
@@ -22,12 +23,82 @@ body{
 /* HEADER */
 header{
   background-color: var(--corpri);
-  padding: 20px 30px;
   color: white;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.201);
 }
 
-header > div > h1{
-  font-size: 20px;
+/* NAVBAR */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > div#logo{
+  margin: 30px;
+}
+
+nav > div#logo > a{
+  text-decoration: none;
+  font-size: 36px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+nav > ul > li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+nav > ul > li > a:hover{
+  background-color: var(--corseg);
+  border-radius: 10px;
+  transition: .5s;
+  text-decoration: underline;
+}
+
+/* NAVBAR LATERAL */
+#menu-l{
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--corpri);
+}
+
+ul#menu-l > li{
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ÍCONES ABRIR E FECHAR */
+i{
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#fechar{
+  margin: 20px;
 }
 
 /* SEÇAO INICIO */
@@ -53,11 +124,11 @@ header > div > h1{
   margin-bottom: 15px;
 }
 
-#btn1{
+#btn-inicio{
   padding: 10px;
 }
 
-#btn1 > button{
+#btn-inicio > button{
   background-color: var(--corseg);
   border: none;
   padding: 8px;
@@ -66,13 +137,13 @@ header > div > h1{
   transition: .3s ease-in;
 }
 
-#btn1 > button:hover{
+#btn-inicio > button:hover{
   background-color: transparent;
   border: 1px solid white;
   cursor: pointer;
 }
 
-#btn1 > button > a{
+#btn-inicio > button > a{
   text-decoration: none;
   color: white;
   font-weight: 600;
@@ -91,7 +162,7 @@ header > div > h1{
 
 /* SEÇAO ABOUT */
 #about{
-  background-image: url(../img/img-02.jpeg);
+  background-image: url(../img/img-01.png);
   background-size: cover;
   background-position: center;
   filter: brightness(70%);
@@ -106,18 +177,20 @@ header > div > h1{
   padding: 30px;
 }
 
-#about > h1{
+#about > div{
+  width: 60%;
+}
+#about > div > h1{
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
   font-family: sans-serif;
 }
 
-#about > p{
+#about > div > p{
   text-align: justify;
   font-size: 20px;
   font-weight: 600;
-  color: white;
 }
 
 /* SEÇAO BENEFICIOS */
@@ -171,7 +244,7 @@ header > div > h1{
 #seçao-4{
   width: 100%;
   height: 500px;
-  background-image: url(../img/istockphoto-181894126-612x612.jpg);
+  background-image: url(../img/img-02.png);
   background-size: cover;
   background-position: center;
   padding: 30px;
@@ -219,4 +292,87 @@ header > div > h1{
   font-weight: 600;
   font-family: monospace;
   font-size: 15px;
+}
+
+/* SEÇÃO CONTATO */
+section#seçao-contato{
+  background-color: rgb(241, 221, 225);
+  color: black;
+  padding: 0 0px 0 20px ;
+}
+
+section#seçao-contato > h1{
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top: 20px;
+}
+
+section#seçao-contato > ul > li{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  width: 350px;
+}
+
+section#seçao-contato > ul > li > i{
+  font-size: 16px;
+  color: black;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+form > input{
+  width: 80%;
+  height: 50px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+form > input::placeholder{
+  color: black;
+}
+
+textarea{
+  margin-bottom: 20px;
+  background-color: transparent;
+  width: 80%;
+  height: 90px;
+  outline: none;
+  padding: 10px 20px;
+}
+
+textarea::placeholder{
+  color: black;
+}
+
+#btn1{
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#btn1:hover{
+  background-color: transparent;
+  color: black;
+  transition: .5s;
+}
+
+footer{
+  background-color: var(--corpri);
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
